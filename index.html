@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Make body full height and use flex for sticky footer */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(4, 12, 9, 0.847);
+      color: white;
+      padding: 15px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    /* Main container */
+    .main {
+      display: flex;
+      margin: 20px 10px;
+      gap: 10px;
+      flex: 1; /* grow to push footer down */
+    }
+
+    /* Anchor full width */
+    .main a {
+      flex: 1;
+      text-decoration: none;
+      color: black;
+      display: block; /* full div clickable */
+    }
+
+    /* Boxes */
+    .box {
+      height: 300px;
+      background: lightgray;
+      border: 1px solid black;
+      border-radius: 10px;
+
+      display: flex;          /* center content */
+      justify-content: center;
+      align-items: center;
+
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    /* Hover effect */
+    .main a:hover .box {
+      transform: scale(0.95);
+      background-color: rgba(137, 43, 226, 0.817);
+      color: white;
+    }
+
+    /* Footer */
+    .footer {
+      background-color:rgba(4, 12, 9, 0.847);
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    .footer a:hover {
+      color: #89ACE1;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .footer-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icons a {
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #89ACE1;
+}
+img{
+  display: block;
+  margin: 20px auto;
+  max-width: 200px;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    Assignment
+  </div>
+  <img src="assests/images/images.png" alt="Saylani logo">
+
+  <!-- Main content with 3 divs -->
+  <div class="main">
+    <a href="task1.html">
+      <div class="box">Task 1</div>
+    </a>
+
+    <a href="task2.html">
+      <div class="box">Task 2</div>
+    </a>
+
+    <a href="task3.html">
+      <div class="box">Task 3</div>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 <i>Shair Ali Memon</i>. All Rights Reserved.</p>
+      <div class="footer-icons">
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+</div>
+    </div>
+  </footer>
+
+</body>
+</html>
