@@ -4,9 +4,115 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>task 2</title>
+  <style>
+    /* FORM STYLING */
+        .form-box {
+            width: 350px;
+            border: 1px solid black;
+            padding: 15px;
+        }
+
+        .form-box table {
+            width: 100%;
+            border: none;
+        }
+
+        .form-box td {
+            border: none;
+            padding: 6px;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+        }
+
+        textarea {
+            height: 60px;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+  </style>
 </head>
 <body>
-   <h1>This is Task 2 Page</h1>
+   <h1>This is Task 2 </h1>
+   <center>
+   <form>
+<table border="1" width="500px" height="600px" cellpadding="10" cellspacing="0">
+
+    <tr>
+        <th colspan="2">Employee Registration Form</th>
+    </tr>
+
+    <tr>
+        <td>Full Name</td>
+        <td><input type="text" placeholder="Enter full name"></td>
+    </tr>
+
+    <tr>
+        <td>Email</td>
+        <td><input type="email" placeholder="Enter email"></td>
+    </tr>
+
+    <tr>
+        <td>Password</td>
+        <td><input type="password"></td>
+    </tr>
+
+    <tr>
+        <td>Department</td>
+        <td>
+            <select>
+                <option>Frontend</option>
+                <option>Backend</option>
+                <option>Marketing</option>
+                <option>Support</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Gender</td>
+        <td>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+        </td>
+    </tr>
+
+    <tr>
+        <td>Skills</td>
+        <td>
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS
+            <input type="checkbox"> JavaScript
+        </td>
+    </tr>
+
+    <tr>
+        <td>Message</td>
+        <td>
+            <textarea rows="4" cols="25"></textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </td>
+    </tr>
+
+</table>
+</form>
+</center>
+<br>
+<br>
   <a href="index.html"><img src="https://www.flaticon.com/free-icon/back-button_93634" alt="Back Home"></a>
 </body>
 </html>
